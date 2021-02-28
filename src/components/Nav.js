@@ -10,7 +10,7 @@ const Nav = () => {
     <StyledNav>
       <h1>
         <Link id="logo" to="/">
-          Capture
+          Shahan Medic
         </Link>
       </h1>
       <ul>
@@ -50,7 +50,7 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  background: #282828;
+  background: #8ad900;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -91,7 +91,7 @@ const StyledNav = styled.nav`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #23d997;
+  background: #ffd83b;
   width: 0%;
   position: absolute;
   bottom: -80%;

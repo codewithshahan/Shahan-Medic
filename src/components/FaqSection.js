@@ -19,40 +19,42 @@ const FaqSection = () => {
         Any Questions <span>FAQ</span>
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How Do I Start?">
+        <Toggle title="How do we believe in you that your content is authentic?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-              autem accusamus ex laboriosam porro, adipisci quam voluptatum
-              magnam placeat corporis.
+              We use Reference in Description and Books Name along with author.
+            </p>
+            <p>
+              Our content is base on research and famous author suggestions.
+              Also we use online videos and websites to create our content more
+              flexible.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Daily Schedule">
+        <Toggle title="How do you make videos?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>First of all, we research a topic in the books or online. </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
-              totam.
+              then we summarize them and make our content in much attractive
+              with animations.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Diferrent Payment Methods">
+        <Toggle title="Which Software do you use to make the videos?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
-            </p>
+            <p>Actually, we use VideoScribe wthiteboard animation Software. </p>
+            <p>Sometimes, Movavi Video Editor Software.</p>
           </div>
         </Toggle>
-        <Toggle title="What Products do you offer.">
+        <Toggle title="What is your plan in the future?">
           <div className="answer">
-            <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, neque.
+              We want to help people to live a more productive life and avoid
+              social distructions to focus on what they want in life.
+            </p>
+            <p>
+              Also, we porvide more content to live a healthy lifestyle like
+              exercising and eat healthy foods.
             </p>
           </div>
         </Toggle>

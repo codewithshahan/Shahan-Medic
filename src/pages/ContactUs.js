@@ -5,52 +5,35 @@ import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
 const ContactUs = () => {
+  const contact = "https://withshahan.github.io/Contact-Form-HTML/";
   return (
-    <ContactStyle
-      exit="exit"
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      style={{ background: "#fff" }}
-    >
-      <Title>
-        <Hide>
-          <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
-        </Hide>
-      </Title>
-      <div>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send Us A Message</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Send an email.</h2>
-          </Social>
-        </Hide>
-        <Hide>
-          <Social variants={titleAnim}>
-            <Circle />
-            <h2>Social Media</h2>
-          </Social>
-        </Hide>
+    <React.Fragment>
+      <ContactStyle
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        style={{ background: "#fff" }}
+      ></ContactStyle>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          alignSelf: "center",
+          alignContent: "center",
+          marginTop: 100,
+        }}
+      >
+        <a class="btn" href="mailto:shahanmedic@gmail.com">
+          CONTACT US
+        </a>
       </div>
-    </ContactStyle>
+    </React.Fragment>
   );
 };
 
-const ContactStyle = styled(motion.div)`
-  padding: 5rem 10rem;
-  color: #353535;
-  min-height: 90vh;
-  @media (max-width: 1500px) {
-    padding: 2rem;
-    font-size: 1rem;
-  }
-`;
+const ContactStyle = styled(motion.div)``;
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;

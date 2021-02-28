@@ -4,7 +4,7 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import m from "../img/m.png";
 //Styles
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
@@ -22,41 +22,41 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          Our <span>Content</span>
         </h2>
         <Cards>
           <Card>
             <div className="icon">
               <img alt="icon" src={clock} />
-              <h3>Efficient</h3>
+              <h3>Productivity</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Our content will help you to become more Productive</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={teamwork} />
-              <h3>Teamwork</h3>
+              <h3>Big Ideas</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>It will make your life more creative and meaningful</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={diaphragm} />
-              <h3>Diaphragm</h3>
+              <h3>Book Summaries</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Great author's suggesions will make your life easy</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={money} />
-              <h3>Affordable</h3>
+              <h3>Non Profit</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Our content is totally free</p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img alt="camera" src={home2} />
+        <img alt="camera" src={m} />
       </Image>
     </Services>
   );
@@ -88,6 +88,7 @@ const Card = styled.div`
       background: white;
       color: black;
       padding: 1rem;
+      border-radius: 2px;
     }
   }
 `;

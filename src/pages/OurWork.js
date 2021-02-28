@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import study from "../img/study.jpg";
+import productivity from "../img/productivity.jpg";
+import idea from "../img/idea.jpg";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -17,6 +17,7 @@ import {
 } from "../animation";
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
+import YoutubeVideos from "../components/YoutubeVideos";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -36,20 +37,20 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.h2 variants={fade}>Study Less Study Smart</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            <motion.img variants={photoAnim} src={productivity} alt="athlete" />
           </Hide>
         </Link>
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>The Racer</h2>
+        <h2>Memory Training</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer" />
+          <img src={study} alt="theracer" />
         </Link>
       </Movie>
 
@@ -59,13 +60,14 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>Good Times</h2>
+        <h2>Productivity</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes" />
+          <img src={idea} alt="goodtimes" />
         </Link>
       </Movie>
       <ScrollTop />
+      <YoutubeVideos />
     </Work>
   );
 };
